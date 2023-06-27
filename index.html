@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Serial Pictures</title>
-  <style>
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        margin: 0%;
     }
-  </style>
-</head>
-<body>
-  <img src="1.jpg" alt="Picture 1">
-  <img src="2.jpg" alt="Picture 2">
+    .header{
+        height: 297mm;
+        width: 210mm;
+        background-color: aqua;
+        position: absolute;
+    }
+    .bl{
+        background-color: rgb(23, 23, 59);
+        height: 15%;
+        position: relative;
+    }
+.name{
+    color: rgb(135, 109, 38);
+    /* background-color: red; */
+    position: absolute;
 
-</body>
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* justify-content: center;
+    display: flex;
+    align-items: center; */
+
+
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.domain{
+    position: absolute;
+
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(135, 109, 38);
+}
+
+.img1{
+    height: 20px;
+    width: 20px;
+   right: 150px;
+   position: absolute;
+}
+</style>
+    </head>
+    <body>
+
+<div class="header">
+   <div class="bl">
+    <div class="name">
+        NAGULA PRABHATH
+
+    </div>
+<div class="domain">
+    Aspiring Full-Stack Web Developer</div>
+
+  <img  class="img1" src="code.png">
+  
+
+
+</div>
+    </body>
 </html>
