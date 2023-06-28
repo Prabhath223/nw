@@ -5,25 +5,27 @@
 <style>
     body{
         margin: 0%;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .header{
         height: 297mm;
         width: 210mm;
-        background-color: aqua;
+        /* background-color: aqua; */
         position: absolute;
+        border: 1px solid black;
     }
     .bl{
         background-color: rgb(23, 23, 59);
-        height: 15%;
+        height: 16%;
         position: relative;
     }
 .name{
-    color: rgb(135, 109, 38);
+    color: rgb(178, 145, 56);
     /* background-color: red; */
     position: absolute;
 
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
 
     /* justify-content: center;
@@ -31,32 +33,160 @@
     align-items: center; */
 
 
-    font-size: 30px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 .domain{
     position: absolute;
 
-top: 70%;
-left: 50%;
+top: 65%;
+left: 40%;
 transform: translate(-50%, -50%);
 font-family: Arial, Helvetica, sans-serif;
-color: rgb(135, 109, 38);
+color: rgb(178, 145, 56);
+font-size: 12px;
 }
 
 .img1{
+   top: 17px;
+}
+.img2{
+   top: 49px;
+}
+.img3{
+    top: 80px;
+}
+.img4{
+    top: 111px;
+}
+.img5{
+    top: 142px;
+}
+.img1,.img2, .img3, .img4,.img5{
     height: 20px;
     width: 20px;
-   right: 150px;
+   right: 240px;
+   
    position: absolute;
 }
+.call,.mail,.linkedin, .git,.loc{
+    color: rgb(178, 145, 56);
+    position: absolute;
+  font-size: 12px;
+  left: 560px;
+}
+.call{
+  
+  top: 17px;
+}
+.mail{
+top: 50px;
+right:10px
+}
+.linkedin{
+top: 76px;
+
+}
+.git{
+    top: 115px;
+}
+.loc{
+    top:145px
+}
+.pic{
+    height: 137px;
+    width: 115px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+.border-line{
+    border-left: 3px solid rgb(178, 145, 56);
+    margin: 10px;
+    height: 80%;
+    left: 267px;
+    position: absolute;
+}
+
+
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    
+    .left-column {
+      width: 35%;
+    }
+    
+    .left-column1 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .second-col1 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+
+
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 35% auto;
+      grid-gap: 8px;
+    }
+    
+    .left-column-1 {
+      height: 310px;
+      /* background-color: lightgray; */
+      margin: 20px;
+      font-size: 12pt;
+    }
+    .left-column-2{
+        /* background-color: antiquewhite; */
+        margin: 20px;
+        margin-top: 0px;
+    }
+    .right-column-1 {
+      height: 60px;
+      background-color: lightblue;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    .grid-item {
+      /* border: 1px solid black; */
+      padding: 8px;
+    }
+
+
+    .header1,.header-2{
+        font-weight: 800;
+        color: rgb(178, 145, 56);
+    }
+    
 </style>
     </head>
     <body>
 
 <div class="header">
    <div class="bl">
+    <img src="cc.jpg" class="pic">
     <div class="name">
         NAGULA PRABHATH
 
@@ -64,10 +194,45 @@ color: rgb(135, 109, 38);
 <div class="domain">
     Aspiring Full-Stack Web Developer</div>
 
-  <img  class="img1" src="code.png">
-  
+  <img  class="img1" src="phone-call.png">
+  <span class="call">+91 9515190530</span>
+  <img class="img2" src="email.png">
+  <span class="mail">nagulaprabhath@gmail.com</span>
+  <img class="img3" src="linkedin.png">
+  <span class="linkedin">https://www.linkedin.com/in/nagula-prabhath-975250255/</span>
+  <img class="img4" src="code.png">
+  <span class="git">https://github.com/Prabhath223</span>
+  <img class="img5" src="location.png">
+  <span class="loc" >Warangal, Telangana</span>
+  <!-- //#876D26 -->
 
 
 </div>
+<div class="border-line"></div>
+
+
+
+
+<div class="grid-container">
+    <div class="grid-item left-column-1"><header class="header1">SUMMARY</header><BR>Dedicated and aspiring full-stack web developer student with a strong passion for creating dynamic and user-friendly web applications. Proficient in front-end technologies such as HTML, CSS, and JavaScript, as well as back-end technologies like Node.js and databases. Committed to continuous learning and staying updated with the latest industry trends to deliver high-quality and innovative solutions.</div>
+    <div class="grid-item right-column-1">Second Column</div>
+    <div class="grid-item left-column-2"><HEADER class="header-2">TECHNICAL SKILLS</HEADER><br>
+       <ul>
+       <li> <b>Programming Languages:</b> JavaScript, Python, HTML, CSS, SQL</li>
+       <li> <b> Front-end Development:</b> React, Angular, Vue.js, Bootstrap</li>
+       <li> <b>Back-end Development:</b> Node.js, Express.js</li>
+       <li> <b> Database Management:</b> MySQL, MongoDB</li>
+        <li> <b> Version Control:</b> Git, GitHub</li>
+            <li> <b> Deployment: </b>AWS, Firebase</li>
+                <li> <b>Testing and Debugging:</b> Jest, Mocha, Chai, DevTools</li>
+       </ul> </div>
+    <div class="grid-item">Second Column</div>
+    <div class="grid-item"><header class="header-3">CERTIFICATIONS</header></div>
+    <div class="grid-item">Second Column</div>
+    <div class="grid-item">Left Column</div>
+    <div class="grid-item">Second Column</div>
+    <div class="grid-item">Left Column</div>
+    <div class="grid-item">Second Column</div>
+  </div>
     </body>
 </html>
