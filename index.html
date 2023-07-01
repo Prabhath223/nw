@@ -3,13 +3,14 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+    
     body{
         margin: 0%;
         font-family: Arial, Helvetica, sans-serif;
     }
     .header{
-        height: 297mm;
-        width: 210mm;
+        width: 21cm;  /* A4 width */
+  height: 29.7cm;
         /* background-color: aqua; */
         position: absolute;
         border: 1px solid black;
@@ -17,6 +18,7 @@
     .bl{
         background-color: rgb(23, 23, 59);
         height: 16%;
+        width: 100%;
         position: relative;
     }
 .name{
@@ -104,36 +106,12 @@ top: 76px;
 .border-line{
     border-left: 3px solid rgb(178, 145, 56);
     margin: 10px;
-    height: 80%;
-    left: 267px;
+    height: 82%;
+    left: 310px;
     position: absolute;
 }
 
 
-
-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-    }
-    
-    .left-column {
-      width: 35%;
-    }
-    
-    .left-column1 {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    
-    .second-col1 {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
 
 
 
@@ -141,24 +119,76 @@ table {
 
     .grid-container {
       display: grid;
-      grid-template-columns: 35% auto;
+      grid-template-columns: 40% auto;
       grid-gap: 8px;
+      align-items: flex-start;
+
+
+
     }
+  
     
     .left-column-1 {
-      height: 310px;
+      height: 210px;
       /* background-color: lightgray; */
       margin: 20px;
-      font-size: 12pt;
+      margin-bottom: 0px;
+      font-size: 10pt;
+      border-bottom: 1px solid black;
     }
     .left-column-2{
         /* background-color: antiquewhite; */
         margin: 20px;
-        margin-top: 0px;
+        margin-top: -140px;
+        margin-bottom: 0px;
+      padding: 20px;
+        font-size: 10pt;
+        border-bottom: 1px solid black;
+        height: 210px;
+    }
+    .left-column-3{
+       
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -65px;
+        border-bottom: 1px solid black;
+
+    }
+    .left-column-4{
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -160px;
+        border-bottom: 1px solid black;
+    }
+    .left-column-5{
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -120px;
     }
     .right-column-1 {
-      height: 60px;
-      background-color: lightblue;
+        font-size: 10pt;
+        margin: 20px;
+        border-bottom: 1px solid black;
+    }
+    .right-column-2{
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -20px;
+        border-bottom: 1px solid black;
+        height: 135px;
+    }
+    .right-column-3{
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -20px;
+        border-bottom: 1px solid black;
+
+    }
+    .right-column-4{
+        font-size: 10pt;
+        margin: 20px;
+        margin-top: -20px;
+ 
     }
     ul {
       margin: 0;
@@ -175,11 +205,30 @@ table {
     }
 
 
-    .header1,.header-2{
+    .header1,.header-2, .header-3,.header-4,.header-5,.header-6,.header-7,.header-8,.header-9{
         font-weight: 800;
         color: rgb(178, 145, 56);
     }
-    
+    li,.lii{
+   
+        padding-bottom: 6px;
+       
+        
+    }
+  
+    .lii1,.lii2{
+        margin-top: 5px;
+    }
+    .lii3{
+        padding-bottom: 0px;
+    }
+    .yr{
+        right: 40px;
+        position: absolute;
+        
+
+    }
+   
 </style>
     </head>
     <body>
@@ -215,24 +264,104 @@ table {
 
 <div class="grid-container">
     <div class="grid-item left-column-1"><header class="header1">SUMMARY</header><BR>Dedicated and aspiring full-stack web developer student with a strong passion for creating dynamic and user-friendly web applications. Proficient in front-end technologies such as HTML, CSS, and JavaScript, as well as back-end technologies like Node.js and databases. Committed to continuous learning and staying updated with the latest industry trends to deliver high-quality and innovative solutions.</div>
-    <div class="grid-item right-column-1">Second Column</div>
+    <div class="grid-item right-column-1"><header class="header-6">PROJECTS</header><br>
+        <ul>
+            <li class="list-heading">
+              <strong>Digital Marketing Website (React.js and Node.js)</strong><span class="yr">May '23</span>
+              <ul>
+                <li class="lii1">Developed a dynamic and responsive website using React.js and Node.js to promote digital marketing services.</li>
+                <li>Implemented a user-friendly interface with smooth navigation, ensuring an engaging browsing experience for visitors.</li>
+                <li>Integrated Nodemailer module in Node.js to enable seamless email communication with potential clients.</li>  <!--ensuring efficient lead generation and customer engagement.</li> -->
+              </ul>
+            </li>
+            <li><strong> Management System using Python and MySQL</strong><span class="yr">Jun '22</span>
+            <ul>
+                <li class="lii2">Created an Employee Management System as a solo project after completing a 6-week summer training on MySQL.</li>
+                <li>Utilized Python programming language and MySQL database to build an Employee Management System capable of adding, deleting, and updating employee details.</li>
+                <li class="lii3">Designed and implemented an Employee Management System using Python and MySQL, enabling seamless data entry and efficient HR team operations.</li>
+            </ul></li>
+          </ul>
+        </div>
+
+
+          
     <div class="grid-item left-column-2"><HEADER class="header-2">TECHNICAL SKILLS</HEADER><br>
        <ul>
        <li> <b>Programming Languages:</b> JavaScript, Python, HTML, CSS, SQL</li>
        <li> <b> Front-end Development:</b> React, Angular, Vue.js, Bootstrap</li>
-       <li> <b>Back-end Development:</b> Node.js, Express.js</li>
+       <li> <b>Back-end Development:</b> Node.js, Expss.js</li>
        <li> <b> Database Management:</b> MySQL, MongoDB</li>
         <li> <b> Version Control:</b> Git, GitHub</li>
             <li> <b> Deployment: </b>AWS, Firebase</li>
-                <li> <b>Testing and Debugging:</b> Jest, Mocha, Chai, DevTools</li>
+                <!-- <li> <b>Testing and Debugging:</b> Jest, Mocha, Chai, DevTools</li> -->
        </ul> </div>
-    <div class="grid-item">Second Column</div>
-    <div class="grid-item"><header class="header-3">CERTIFICATIONS</header></div>
-    <div class="grid-item">Second Column</div>
-    <div class="grid-item">Left Column</div>
-    <div class="grid-item">Second Column</div>
-    <div class="grid-item">Left Column</div>
-    <div class="grid-item">Second Column</div>
+    <div class="grid-item right-column-2" ><header class="header-7">ACHIEVEMENTS</header><br>
+    <ul>
+        <li>Led a team during the New Year fundraising campaign, successfully collecting funds for an orphanage home and bringing joy to the lives of underprivileged children.<span class="yr"> Jan '23</span></li>
+        <li>Participated in India's largest techathon, iNeuron, and developed a MERN-based blog website, receiving a participation certificate.<br><span class="yr"> Nov '22</span></li>
+
+    </ul></div>
+
+    <div class="grid-item left-column-3"><header class="header-3">CERTIFICATIONS</header><br>
+    <ul class="ul2">
+        <li class="li1">Database Management System Part-1 | Infosys Springboard | Jun '23</li>
+        <li class="li2">Full Stack MERN Development Course | Prepbytes | Oct '22</li>
+        <li class="li3">The Complete MySQL Developer Course | E-Box | Jul '22</li>
+        
+    </ul></div>
+    <div class="grid-item right-column-3" ><header class="header-8">EDUCATION</header><br>
+      
+         
+
+            <ul>
+                <li class="list-heading">
+            Bachelor of Technology in Computer Science &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    <span class="yr">Since Aug '20</span>and Engineering | Lovely Professional University |  &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;   Punjab, India.  
+            &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    &nbsp; &nbsp; &nbsp; &nbsp;    Cumulative Grade Point Average (CGPA): 7.22/10   
+              
+            
+                </li>
+               <br>
+               <li>
+                Intermediate (11th and 12th Grade) | <span class="yr">Jul '18 - Jul '20</span> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; SR Educational Institute | Telangana, India
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Percentage: 87.7%
+            </li><br>
+                <li>
+                    Matriculation (10th Grade)| Platinum Jubilee High School | <span class="yr">Jun '18</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telangana, India 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 Grade Point Average (GPA): 9.7/10 (93.4%)
+              
+                </li>
+                
+                </ul>
+        
+        
+    </div>
+    <div class="grid-item left-column-4">
+        <header class="header-4">POWER SKILLS</header><br>
+        <ul>
+            <li>Sharp analytical mindset</li>
+            <li>Meticulous attention to detail</li>
+            <li>Effective Communication</li>
+            <li>Imaginative and Empathetic</li>
+            <li>Quick to adapt</li>
+            
+        </ul>
+    </div>
+    <div class="grid-item right-column-4"><header class="header-9">LANGUAGE PROFICIENCY</header><br>
+    <ul>
+        <li>English: Advanced (Proficient)  </li>
+        <li>Telugu: Native</li>
+        <li>Hindi: Intermediate</li>
+    
+    </ul></div>
+<div class="grid-item left-column-5"><header class="header-5">EXTRACURRICULAR ACTIVITIES</header><br>
+<ul>
+    <li>Soft Skills Workshop | Lovely Professional University | Oct '23</li>
+    <li>Organized fundraising campaigns | NGO | Nov '22</li>
+</ul></div>
+    <!-- <div class="grid-item">Second Column</div>  -->
   </div>
+  
     </body>
+    
 </html>
